@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa Deportiva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>SPORTWEAR ELEGANCE</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Inicio</a></li>
+                    <li><a href="#products">Productos</a></li>
+                    <li><a href="#about">Sobre Nosotros</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="tab-content active">
+            <div class="container">
+                <h2>Productos Destacados</h2>
+                <div class="featured-products">
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/200x200?text=Producto+1" alt="Producto Destacado 1">
+                        <h3>Zapatillas Running Pro</h3>
+                        <p class="price">$99.99</p>
+                        <button>Ver Detalles</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/200x200?text=Producto+2" alt="Producto Destacado 2">
+                        <h3>Pantalón Deportivo</h3>
+                        <p class="price">$45.00</p>
+                        <button>Ver Detalles</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/200x200?text=Producto+3" alt="Producto Destacado 3">
+                        <h3>Camiseta Transpirable</h3>
+                        <p class="price">$29.50</p>
+                        <button>Ver Detalles</button>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="products" class="tab-content">
+            <div class="container">
+                <h2>Nuestro Catálogo</h2>
+                <div class="category-filter">
+                    <h3>Categorías:</h3>
+                    <ul>
+                        <li><a href="#" data-category="all" class="filter-active">Todo</a></li>
+                        <li><a href="#" data-category="running">Running</a></li>
+                        <li><a href="#" data-category="training">Entrenamiento</a></li>
+                        <li><a href="#" data-category="swimming">Natación</a></li>
+                        </ul>
+                    <h3>Prendas:</h3>
+                    <ul>
+                        <li><a href="#" data-garment="all" class="filter-active">Todo</a></li>
+                        <li><a href="#" data-garment="shirts">Camisetas</a></li>
+                        <li><a href="#" data-garment="pants">Pantalones</a></li>
+                        <li><a href="#" data-garment="shoes">Calzado</a></li>
+                        </ul>
+                </div>
+
+                <div class="product-grid">
+                    <div class="product-item" data-category="running" data-garment="shoes">
+                        <img src="https://via.placeholder.com/150x150?text=Zapatillas+Runner" alt="Zapatillas Runner">
+                        <h4>Zapatillas Runner X100</h4>
+                        <p>$85.00</p>
+                    </div>
+                    <div class="product-item" data-category="training" data-garment="shirts">
+                        <img src="https://via.placeholder.com/150x150?text=Camiseta+Fit" alt="Camiseta Fit">
+                        <h4>Camiseta Fit Pro</h4>
+                        <p>$35.00</p>
+                    </div>
+                    <div class="product-item" data-category="running" data-garment="pants">
+                        <img src="https://via.placeholder.com/150x150?text=Pantalón+Jogger" alt="Pantalón Jogger">
+                        <h4>Pantalón Jogger Dry</h4>
+                        <p>$50.00</p>
+                    </div>
+                    <div class="product-item" data-category="swimming" data-garment="shirts">
+                        <img src="https://via.placeholder.com/150x150?text=Traje+Baño" alt="Traje de Baño">
+                        <h4>Traje de Baño Elite</h4>
+                        <p>$60.00</p>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="about" class="tab-content">
+            <div class="container">
+                <h2>Sobre Nosotros</h2>
+                <p>Bienvenido a **SPORTWEAR ELEGANCE**, tu destino definitivo para la ropa deportiva de alto rendimiento y estilo inigualable. Fundada en [Año de Fundación], nuestra misión ha sido siempre equipar a los atletas y entusiastas del deporte con indumentaria que no solo optimice su rendimiento, sino que también refleje su pasión y dedicación.</p>
+                <h3>Nuestra Historia</h3>
+                <p>Desde nuestros humildes comienzos como una pequeña tienda local, hemos crecido gracias a la confianza de nuestros clientes y a nuestro compromiso inquebrantable con la calidad. Cada prenda que ofrecemos es seleccionada y diseñada pensando en la durabilidad, la comodidad y las últimas tendencias en moda deportiva.</p>
+                <h3>Nuestros Valores</h3>
+                <ul>
+                    <li><strong>Calidad:</strong> Nos comprometemos a ofrecer productos de la más alta calidad, que resistan el paso del tiempo y las exigencias del entrenamiento.</li>
+                    <li><strong>Innovación:</strong> Buscamos constantemente las últimas tecnologías en tejidos y diseños para brindarte la mejor experiencia.</li>
+                    <li><strong>Comunidad:</strong> Creemos en el poder del deporte para unir a las personas y nos esforzamos por construir una comunidad de atletas apasionados.</li>
+                    <li><strong>Pasión:</strong> Somos deportistas de corazón y entendemos las necesidades de quienes viven el deporte con la misma intensidad que nosotros.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="tab-content">
+            <div class="container">
+                <h2>Contáctanos</h2>
+                <div class="contact-info">
+                    <h3>Envíanos un mensaje</h3>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Tu Nombre" required>
+                        <input type="email" placeholder="Tu Correo Electrónico" required>
+                        <textarea placeholder="Tu Mensaje" rows="5" required></textarea>
+                        <button type="submit">Enviar Mensaje</button>
+                    </form>
+                </div>
+                <div class="contact-details">
+                    <h3>Encuéntranos</h3>
+                    <p><strong>Dirección:</strong> [Tu Dirección Física Completa]</p>
+                    <p><strong>Teléfono:</strong> [Tu Número de Teléfono]</p>
+                    <p><strong>Email:</strong> [Tu Correo Electrónico]</p>
+                    <h3>Síguenos en Redes Sociales:</h3>
+                    <div class="social-links">
+                        <a href="#" target="_blank">Facebook</a>
+                        <a href="#" target="_blank">Instagram</a>
+                        <a href="#" target="_blank">Twitter</a>
+                        </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 SPORTWEAR ELEGANCE. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
