@@ -1,0 +1,357 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    border-bottom: 5px solid #007bff; /* Accent color */
+}
+
+header h1 {
+    margin: 0;
+    float: left;
+    font-size: 2.5em;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #007bff; /* Accent color on hover/active */
+}
+
+/* Clearfix for header */
+header .container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px 0;
+}
+
+.tab-content {
+    display: none; /* Hidden by default, shown by JavaScript */
+    padding: 20px 0;
+}
+
+.tab-content.active {
+    display: block; /* Active tab is shown */
+}
+
+h2 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+}
+
+/* Home Section - Featured Products */
+.featured-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-card .price {
+    font-size: 1.2em;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.product-card button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: #0056b3;
+}
+
+/* Products Section - Filters and Grid */
+.category-filter, .garment-filter {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.category-filter h3, .garment-filter h3 {
+    display: inline-block;
+    margin-right: 15px;
+    color: #555;
+}
+
+.category-filter ul, .garment-filter ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+}
+
+.category-filter ul li, .garment-filter ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.category-filter ul li a, .garment-filter ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.category-filter ul li a:hover,
+.category-filter ul li a.filter-active,
+.garment-filter ul li a:hover,
+.garment-filter ul li a.filter-active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product-item h4 {
+    margin: 8px 0;
+    color: #333;
+}
+
+.product-item p {
+    font-size: 1.1em;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* About Us Section */
+#about p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+#about h3 {
+    color: #007bff;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+#about ul {
+    list-style: none;
+    padding: 0;
+}
+
+#about ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+#about ul li strong {
+    color: #555;
+}
+
+/* Contact Section */
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact-info, .contact-details {
+    flex: 1;
+    min-width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3, .contact-details h3 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.contact-details p {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.contact-details strong {
+    color: #555;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 15px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 5px solid #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        float: none;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    header nav ul {
+        float: none;
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .featured-products, .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .contact-info, .contact-details {
+        min-width: unset;
+        flex: 1 1 100%;
+    }
+}
